@@ -2,16 +2,6 @@
 
 Golang HX711 interface using periph.io driver
 
-[![GoDoc Reference](https://godoc.org/github.com/SimonWaldherr/hx711go?status.svg)](http://godoc.org/github.com/SimonWaldherr/hx711go)
-[![Go Report Card](https://goreportcard.com/badge/github.com/SimonWaldherr/hx711go)](https://goreportcard.com/report/github.com/SimonWaldherr/hx711go)
-
-## Get an HX711
-
-you can order a nice hx711 with a load cell directly from amazon: https://amzn.to/3Lls0u6  
-or https://www.bastelgarage.ch/load-cell-amplifier-hx711-wiegesensor-24-bit , 
-https://www.exp-tech.de/sensoren/waegezelle/7507/sparkfun-load-cell-amplifier-hx711 , 
-https://www.sparkfun.com/products/13879  
-
 ## Please note
 
 Please make sure to setup your HX711 correctly. Do a search on the internet to find guide. Here is an example of a guide:
@@ -24,10 +14,9 @@ If you need to read from channel B, make sure to call hx711.SetGain(32)
 
 Side note, in my testing using 3V input had better consistency then using a 5V input.
 
-
 ## Get
 
-`go get github.com/SimonWaldherr/hx711go`
+`go get github.com/jimnelson2/hx711go`
 
 ## Tags
 
@@ -53,7 +42,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/SimonWaldherr/hx711go"
+	"github.com/jimnelson2/hx711go"
 )
 
 func main() {
@@ -106,7 +95,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/SimonWaldherr/hx711go"
+	"github.com/jimnelson2/hx711go"
 )
 
 func main() {
@@ -139,7 +128,7 @@ func main() {
 or
 
 ```
-go build -v -o getAdjustValues github.com/SimonWaldherr/hx711go/getAdjustValues
+go build -v -o getAdjustValues github.com/jimnelson2/hx711go/getAdjustValues
 ```
 
 ## Simple program to get weight
@@ -153,7 +142,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/SimonWaldherr/hx711go"
+	"github.com/jimnelson2/hx711go"
 )
 
 func main() {
